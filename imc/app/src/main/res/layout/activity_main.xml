@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Imc.AppBarOverlay"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculo IMC"
+            android:textAlignment="center"
+            android:textColor="#33366E"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputpeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Digite seu peso:" />
+
+        <EditText
+            android:id="@+id/inputaltura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Digite sua altura:" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado:"
+            android:textColor="#000000"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D51515"
+            android:backgroundTint="#911111"
+            android:insetLeft="10dp"
+            android:insetTop="10dp"
+            android:insetRight="10dp"
+            android:insetBottom="10dp"
+            android:onClick="imc"
+            android:text="Calcular"
+            android:textSize="20sp"
+            app:iconTint="#CF1D1D"
+            app:rippleColor="#DC1D1D" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
